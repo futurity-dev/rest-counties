@@ -41,7 +41,8 @@ export default function ApiDocsPage() {
 
               </AlertTitle>
               <AlertDescription>
-                    To Avoid Cors Origin use the request from your own server ** Cross Origin Through Browser not Allowed Yet **
+                To avoid CORS issues, send the request through your own server.
+Note: Direct cross-origin requests from the browser are not allowed.
               </AlertDescription>
         </Alert>
 

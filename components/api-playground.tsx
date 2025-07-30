@@ -19,7 +19,7 @@ import {
 
 const ApiPlayground = () => {
   return (
-    <section className=" mx-auto min-h-96 flex flex-col gap-2 box-border p-4 dark:bg-slate-900">
+    <section className=" mx-auto min-h-96 flex flex-col gap-2 box-border p-4 dark:bg-black">
       <Tabs defaultValue="country" className="w-full">
         <TabsList>
           <TabsTrigger value="country">Country</TabsTrigger>
@@ -79,25 +79,25 @@ const CountryTab = () => {
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 sm:gap-3 text-xs sm:text-sm">
                 <div>
                   <span className="font-medium text-gray-600">Capital:</span>
-                  <p className="text-gray-900 truncate">{item.capital}</p>
+                  <p className="text-foreground truncate">{item.capital}</p>
                 </div>
                 <div>
                   <span className="font-medium text-gray-600">Region:</span>
-                  <p className="text-gray-900 truncate">{item.region}</p>
+                  <p className="text-foreground truncate">{item.region}</p>
                 </div>
                 <div>
                   <span className="font-medium text-gray-600">Phone Code:</span>
-                  <p className="text-gray-900">+{item.phonecode}</p>
+                  <p className="text-foreground">+{item.phonecode}</p>
                 </div>
                 <div>
                   <span className="font-medium text-gray-600">Currency:</span>
-                  <p className="text-gray-900 truncate">{item.currency_name}</p>
+                  <p className="text-foreground truncate">{item.currency_name}</p>
                 </div>
                 <div className="sm:col-span-2">
                   <span className="font-medium text-gray-600">
                     Nationality:
                   </span>
-                  <p className="text-gray-900 truncate">{item.nationality}</p>
+                  <p className="text-foreground truncate">{item.nationality}</p>
                 </div>
                 <div className="sm:col-span-2 flex flex-wrap gap-1">
                   <Badge variant="secondary" className="text-xs">
