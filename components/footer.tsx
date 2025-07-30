@@ -1,4 +1,5 @@
 import { Globe } from "lucide-react"
+import Link from "next/link"
 
 export function Footer() {
   return (
@@ -11,9 +12,9 @@ export function Footer() {
           </div>
 
           <div className="flex flex-wrap justify-center sm:justify-end space-x-4 sm:space-x-6 text-sm text-gray-400">
-            <a href="#" className="hover:text-white transition-colors">
+            <Link href="/docs" className="hover:text-white transition-colors">
               Documentation
-            </a>
+            </Link>
             <a href="#" className="hover:text-white transition-colors">
               GitHub
             </a>
@@ -24,7 +25,7 @@ export function Footer() {
         </div>
 
         <div className="mt-6 sm:mt-8 pt-6 sm:pt-8 border-t border-gray-800 text-center text-xs sm:text-sm text-gray-400">
-          <p>&copy; 2024 REST Countries API. Free to use for everyone.</p>
+          <p>&copy; 2025 REST Countries API. Free to use for everyone.</p>
         </div>
       </div>
     </footer>
